@@ -175,6 +175,7 @@ body {
 
 .menu-link {
   color: var(--primary-color);
+  transition: color var(--main-transition);
 }
 
 .contacts-link {
@@ -182,6 +183,7 @@ body {
   align-items: center;
   gap: 10px;
   color: var(--secondary-color);
+  transition: color var(--main-transition);
 }
 
 .contacts-icon {
@@ -381,10 +383,12 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color var(--main-transition);
 }
 
 .socials-icon {
   fill: var(--grey-icon);
+  transition: fill var(--main-transition);
 }
 
 .socials-link:hover,
@@ -422,10 +426,12 @@ body {
   height: 100%;
   border: 1px solid var(--grey-icon);
   border-radius: 4px;
+  transition: border-color var(--main-transition);
 }
 
 .clients-icon {
   fill: var(--grey-icon);
+  transition: fill var(--main-transition);
 }
 
 .clients-link:hover,
@@ -467,6 +473,7 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--main-transition);
 }
 
 .contacts-footer-list-item:not(:last-child) {
@@ -523,6 +530,9 @@ body {
   color: var(--primary-color);
   background-color: var(--grey-bg);
   border-radius: 4px;
+  transition: color var(--main-transition),
+    background-color var(--main-transition), box-shadow var(--main-transition),
+    border-radius var(--main-transition);
 }
 
 .filters-button:first-child {
@@ -547,6 +557,7 @@ body {
 
 .projects-link {
   display: block;
+  transition: box-shadow var(--main-transition);
 }
 
 .projects-item-overlay {
@@ -593,6 +604,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-color);
+  transition: color var(--main-transition);
 }
 
 .projects-item-category {
@@ -600,10 +612,11 @@ body {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  transition: color var(--main-transition);
 }
 
 .projects-item-title:hover,
-.projects-item-title:hover,
+.projects-item-title:focus,
 .projects-item-category:focus,
 .projects-item-category:hover {
   color: var(--highlight-color);
